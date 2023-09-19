@@ -1,13 +1,13 @@
 {
   "name": "afk-bot",
-  "version": "1.4.0",
-  "description": "Afk bot for minecraft servers.",
+  "version": "1.4.1",
+  "description": "Afk bot for minecraft servers",
   "main": "bot.js",
   "scripts": {
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "urFate",
+  "author": "emberglaze",
   "license": "MIT",
   "dependencies": {
     "log4js": "^6.9.1",
