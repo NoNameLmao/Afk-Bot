@@ -17,7 +17,7 @@
 
 ## Installation
 
- 1. [Download](https://github.com/urFate/Afk-Bot/tags) the latest package.
+ 1. [Download](https://github.com/NoNameLmao/Afk-Bot/tags) the latest package.
  2. Download & install [Node.JS](https://nodejs.org/en/download/)
  3. Run `npm install` command in bot directory.
 
@@ -38,4 +38,4 @@
 
 ### License
 
- [MIT](https://github.com/urFate/Afk-Bot/blob/main/LICENSE)
+[MIT](https://github.com/NoNameLmao/Afk-Bot/blob/main/LICENSE)
