@@ -63,13 +63,8 @@ function createBot() {
 	
 					setInterval(() => {
 						if (attackMobs) {
-							let entity = bot.nearestEntity(e => e
-								.type !== 'object'
-								&& e.type !== 'player'
-								&& e.type !== 'global'
-								&& e.type !== 'orb'
-								&& e.type !== 'other'
-							);
+							const excludedTypes = ['object', 'player', 'global', 'orb', 'other'];
+							let entity = bot.nearestEntity(e => !excludedTypes.includes(e.type));
 							if (entity) {
 								bot.attack(entity);
 								return
