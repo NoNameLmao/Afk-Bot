@@ -28,12 +28,12 @@
 
 ## Features
 
-    - Anti-AFK Kick Module  
-    - Move to target block after join 
-    - Mojang/Microsoft Account support   
-    - Chat log 
-    - Chat messages Module   
-    - Auto reconnect   
+    - Anti-AFK Kick Module
+    - Move to target block after join
+    - Microsoft Account support
+    - Chat log
+    - Chat messages Module
+    - Auto reconnect
     - Supported server versions: `1.8 - 1.19.3`
 
 ### License
