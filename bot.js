@@ -1,7 +1,6 @@
 const mineflayer = require('mineflayer');
 const Movements = require('mineflayer-pathfinder').Movements;
-const pathfinder = require('mineflayer-pathfinder').pathfinder;
-const { GoalBlock, GoalXZ } = require('mineflayer-pathfinder').goals;
+const { pathfinder, goals: { GoalBlock, GoalXZ } } = require('mineflayer-pathfinder');
 
 const config = require('./settings.json');
 
@@ -9,23 +8,23 @@ const loggers = require('./logging.js');
 const logger = loggers.logger;
 
 function createBot() {
+   /** @type {import('./index').Bot} (bot.registry IS minecraft-data) */
    const bot = mineflayer.createBot({
-      username: config['bot-account']['username'],
-      password: config['bot-account']['password'],
-      auth: config['bot-account']['type'],
+      username: config['bot-account'].username,
+      password: config['bot-account'].password,
+      auth: !!password ? 'microsoft' : 'offline',
       host: config.server.ip,
       port: config.server.port,
       version: config.server.version,
    });
 
    bot.loadPlugin(pathfinder);
-   const mcData = require('minecraft-data')(bot.version);
-   const defaultMove = new Movements(bot, mcData);
+   const defaultMove = new Movements(bot);
    bot.settings.colorsEnabled = false;
    bot.pathfinder.setMovements(defaultMove);
 
    bot.once('spawn', () => {
-      logger.info("Bot joined to the server");
+      logger.info('Bot joined to the server');
 
       if (config.utils['auto-auth'].enabled) {
          logger.info('Started auto-auth module');
@@ -95,7 +94,7 @@ function createBot() {
                      }
                }
 
-               bot.swingArm("right", true);
+               bot.swingArm('right', true);
             }, delay);
          }
 
