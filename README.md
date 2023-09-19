@@ -34,7 +34,7 @@
     - Chat log
     - Chat messages Module
     - Auto reconnect
-    - Supported server versions: `1.8 - 1.19.3`
+    - Supported server versions: `1.8 - 1.20.1`
 
 ### License
 
