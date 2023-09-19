@@ -1,3 +1,6 @@
+settings.json
+
+### FROM .gitignore TEMPLATE ###
 # Logs
 logs
 *.log
