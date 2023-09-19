@@ -1,10 +1,10 @@
 # Afk Bot
 
-<p align="center">
-    ![image](https://img.shields.io/github/issues/nonamelmao/afk-bot)
-    ![image](https://img.shields.io/github/forks/nonamelmao/afk-bot)
-    ![image](https://img.shields.io/github/stars/nonamelmao/afk-bot)
-    ![image](https://img.shields.io/github/license/nonamelmao/afk-bot)
+<p align="center"> 
+    <img src="https://img.shields.io/github/issues/nonamelmao/afk-bot">
+    <img src="https://img.shields.io/github/forks/nonamelmao/afk-bot">
+    <img src="https://img.shields.io/github/stars/nonamelmao/afk-bot">
+    <img src="https://img.shields.io/github/license/nonamelmao/afk-bot">
 </p>
 
 <p align="center">
